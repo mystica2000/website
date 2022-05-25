@@ -1,0 +1,3 @@
+---
+layout: template/blog.njk
+---

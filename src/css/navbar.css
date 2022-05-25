@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400&family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+body
+{
+    background-color: #1f2937;
+    color: white;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links
+{
+    display: flex;
+    gap: 30px;
+}
+
+
+.links
+{
+    /* background-color: #e24a8d; */
+    background: linear-gradient(to left, salmon 50%, #8D8DAA 50%) right;
+    background-size: 200%;
+    padding: 10px;
+    color: black;
+    transition: 0.2s ease-in;
+}
+
+
+.links:hover
+{
+    color: white;
+    background-position: left;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+footer 
+{
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    bottom: 0;
+}
+
+.container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.blog h2
+{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    color: white;
+}
+
+
+.logo
+{
+    width: 30px;
+    height: 30px;
+    object-fit:contain;
+}
+
+.blog p
+{
+    color: black;
+}
+
+.blog-title
+{
+    text-decoration: none;
+}
+
+.blog
+{
+    max-width: 720px;
+    width: 90%;
+    margin: 10px;
+    justify-content: center;
+    border: 2px solid #9ca3af;
+    border-radius: 10px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.body 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tags 
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 0.5em;
+}
+
+.tag 
+{
+    padding: 7px;
+    border-radius: 10px;
+    background-color: #db1d70;
+    color: white;
+}
+
+.content
+{
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.content p
+{
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    background-color: rgb(208 227 249);
+    -webkit-line-clamp: 4;
+    line-height: 1.4em;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;  
+} 
+
+
+.home-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content,.projects-list
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.home-content-div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.me
+{
+    max-width: 290px;
+    max-height: 290px;
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.home-content-p
+{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.box
+{
+    display: flex;
+    gap: 10px;
+    border: 2px solid white;
+    max-width: 200px;
+    width: 100%;
+    padding: 10px;
+    justify-content:space-around;
+}
+
+.projects
+{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: flex-start;
+}
+
+
+@media only screen and (max-width:450px) {
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+nav h1 
+{
+    font-size: 3em;
+}
+
+
+
+.post-container
+{
+    margin-top: 4em;
+    max-width: 720px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.post-header
+{
+    padding: 1em 0em;
+    border-bottom: 2px solid #db1d70;
+    margin-bottom: 2em;
+}
+
+.date 
+{
+    font-size: 0.9em;
+}
+
+
+.post-img
+{
+    max-width:100%;
+    height:auto;
+    margin-top: 10px;
+}
+
+
+figure
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+figcaption
+{
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+}
+
+.post-tags
+{
+    margin-top: 10px;
+}
+
+.tag
+{
+    min-width: 70px;
+    text-align: center;
+    padding: 0.3em;
+
+}

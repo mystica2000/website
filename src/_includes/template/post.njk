@@ -1,0 +1,23 @@
+{% extends "template/home.njk" %}
+
+{% block main %}
+<div class="home-container">
+    
+    <div class="post-container">
+        <div class="post-header">
+             <h1>{{title}}</h1>
+             <p class="date">Last Updated: {{page.date.toUTCString()}}</p>
+                <ul class="tags post-tags">
+                {% for tag in tags %}
+                  {% if tag !== 'post' %}
+                  <li class="tag">{{tag}}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+        </div>
+        <div>
+            {{content | safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}

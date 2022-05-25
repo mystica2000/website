@@ -1,0 +1,28 @@
+{% extends "template/home.njk" %}
+
+{% block main %}
+<ul class="container">
+    <h1>Blogs</h1>
+    {% for post in collections.post %}
+            <li class="blog">
+               <div class="tags">
+                   {% for tag in post.data.tags %}
+                      {% if tag !== 'post' %}
+                      <div class="tag">{{tag}}</div>
+                      {% endif %}
+                   {% endfor %}
+               </div>
+               <div class="body">
+                   <div class="heading">
+                       <a href="{{post.url}}" class="blog-title"><h2> {{post.data.title}}</h2></a>
+                   </div>
+                   <div class="content">
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>   
+                </div>
+               </div>
+            </li>
+{% endfor %}
+</ul>
+{% endblock %}
