@@ -62,9 +62,7 @@ nav
 footer 
 {
     width: 100%;
-    margin-bottom: 10px;
     text-align: center;
-    bottom: 0;
 }
 
 .container 
@@ -144,7 +142,7 @@ footer
 
 .content p
 {
-    height: 100px;
+    max-height: 100px;
     overflow: hidden;
     padding: 10px;
     background-color: rgb(208 227 249);
@@ -298,4 +296,22 @@ figcaption
     text-align: center;
     padding: 0.3em;
 
+}
+
+
+.footer 
+{
+    background-color: black;
+    font-size: 18pt;
+}
+
+.footer p 
+{
+    padding: 10px;
+}
+
+
+.footer p a:visited
+{
+    color: #db1d70;
 }
