@@ -3,13 +3,13 @@
   "permalink": "/feed.xml",
   "eleventyExcludeFromCollections": true,
   "metadata": {
-    "title": "My Blog about Boats",
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
-    "url": "http://localhost:8080/",
-    "feedUrl": "http://localhost:8080/feed.xml",
+    "title": "My Blog about Software Engineering,Random Stuff",
+    "subtitle": "I am writing about my experiences as a developer.",
+    "url": "https://mystica.pages.dev/",
+    "feedUrl": "https://mystica.pages.dev/feed.xml",
     "author": {
-      "name": "Boaty McBoatFace",
-      "email": "me@example.com"
+      "name": "Mystica J",
+      "email": "mysticainf@gmail.com"
     }
   }
 }
@@ -28,7 +28,6 @@
   </author>
   {% for post in collections.post %}
   {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-  {{post}}
   <entry>
     <title>{{ post.data.title }}</title>
     <link href="{{ absolutePostUrl }}"/>

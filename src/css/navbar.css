@@ -101,7 +101,7 @@ footer
 .blog
 {
     max-width: 720px;
-    width: 90%;
+    width: 100%;
     margin: 10px;
     justify-content: center;
     border: 2px solid #9ca3af;
@@ -109,6 +109,7 @@ footer
     padding: 2em;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .body 
@@ -219,7 +220,16 @@ footer
 }
 
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:750px) {
+    .blog
+    {
+        width: auto;
+    }
+}
+
+
+
+@media only screen and (max-width:490px) {
     nav
     {
         display: flex;
@@ -227,7 +237,29 @@ footer
         gap: 20px;
         margin-bottom: 20px;
     }
+
+    .hide-sm
+    {
+        display: none;
+    }
+    .show-sm
+    {
+        display: inline;
+    }
 }
+
+@media only screen and (min-width:490px) {
+    
+    .hide-sm
+    {
+        display: block;
+    }
+    .show-sm
+    {
+        display: none;
+    }
+}
+
 
 
 nav h1 
@@ -301,17 +333,30 @@ figcaption
 
 .footer 
 {
-    background-color: black;
-    font-size: 18pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer p 
 {
+    width: fit-content;
+    background-color: black;
     padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 
 .footer p a:visited
 {
     color: #db1d70;
+}
+
+
+/** Line */
+hr{ 
+    margin-top: 1.5em;
+    width: 50%;
 }
