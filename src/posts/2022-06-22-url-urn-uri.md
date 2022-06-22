@@ -13,7 +13,7 @@ Before going into the understanding of these three acronyms, we will learn what 
   URI - Uniform Resource Identifier
 ```
 
-## What is Resource?
+## ✨ What is Resource? 
 A resource can be HTML file, images, API endpoints, services, or any documents, books, research papers, etc.
 
 
@@ -28,7 +28,7 @@ From the above diagram, we can able to see that URL and URN are the Subsets of U
 <br>
 <br>
 
-## URL
+## ✨ URL
 It is used to locate Specific resources on the web server or other. It knows where to find them. 
 
 <br>
@@ -56,7 +56,7 @@ Scheme_Specific_Path = path/to/retreival/of/resource
 <br>
 <br>
 
-## URN 
+## ✨ URN 
 - it is the persistent labeling of the resources with an identifier. It does not imply where to find the resource. It is a globally unique name for the resources.
 
 <br>
@@ -104,7 +104,7 @@ Check out other examples in <a href="https://en.wikipedia.org/wiki/Uniform_Resou
 <br>
 <br>
 
-## URI
+## ✨ URI
 
 What is the common between these terms?? 
 URN and URL follow the URI Syntax and it's the subset of URI. 
@@ -182,10 +182,13 @@ And we do Deep Linking (the link that sends the user directly to the app install
 <br><br><br>
 
 - TLDR;
-- URL (location) starts with "protocol:" 
-- URN (namespace) starts with "urn:" 
-- URI - both URL and URN can be called as URI.  
+- ⭐ URL (location) starts with "protocol:" 
+- ⭐ URN (namespace) starts with "urn:" 
+- ⭐ URI - both URL and URN can be called as URI.  
 
+<br>
+<br>
+Feel free to connect with me on <a href="https://twitter.com/CuriouZmystee" class="ahrefmd">twitter!</a> 😀
 
 <br>
 <br>
