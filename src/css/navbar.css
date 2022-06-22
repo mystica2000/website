@@ -101,7 +101,7 @@ footer
 .blog
 {
     max-width: 720px;
-    width: 100%;
+    width: 720px;
     margin: 10px;
     justify-content: center;
     border: 2px solid #9ca3af;
@@ -127,7 +127,7 @@ footer
     margin-top: 0.5em;
 }
 
-.tag 
+.tagss 
 {
     padding: 7px;
     border-radius: 10px;
@@ -322,7 +322,7 @@ figcaption
     margin-top: 10px;
 }
 
-.tag
+.tagss
 {
     min-width: 70px;
     text-align: center;
@@ -348,7 +348,6 @@ figcaption
     margin-bottom: 10px;
 }
 
-
 .footer p a:visited
 {
     color: #db1d70;
@@ -359,4 +358,10 @@ figcaption
 hr{ 
     margin-top: 1.5em;
     width: 50%;
+}
+
+
+.ahrefmd
+{
+    color: #ff6d91;
 }
