@@ -2,20 +2,26 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <nav>
             <h1>Mystica
-            <a href="/feed.xml"><img src="/assets/images/rss.png" width="20" height="20" class="show-sm " alt="rss feed icon"></a></h1>
+            <a href="/feed.xml">
+                <!-- <img src="/assets/images/rss.png" width="20" height="20" class="show-sm " alt="rss feed icon"> -->
+                {% image "src/assets/images/rss.png", "rss feed icon","show-sm" %}
+            </a></h1>
 
             <ul class="nav-links">
                 <li class="nav-link">
-                    <a href="/" class="links">Home</a>
+                    <a href="/" class="links" id="home">Home</a>
                 </li>
                 <li class="nav-link">
-                    <a href="/blog" class="links">Blog</a>
+                    <a href="/blog" class="links" id="blog">Blog</a>
                 </li>
                 <li class="nav-link">
-                    <a href="/others" class="links">Others</a>
+                    <a href="/others" class="links" id="others">Others</a>
                 </li>
                 <li class="nav-link hide-sm">
-                    <a href="/feed.xml"><img src="/assets/images/rss.png" alt="rss feed icon" width="30" height="30"></a>
+                    <a href="/feed.xml">
+                        <!-- <img src="/assets/images/rss.png" alt="rss feed icon" width="30" height="30"> -->
+                        {% image "src/assets/images/rss.png", "github profile","rss-icon" %}
+                    </a>
                 </li>
             </ul>
         </nav>

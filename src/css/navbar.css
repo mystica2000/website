@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -20,6 +19,8 @@ body
 {
     background-color: #1f2937;
     color: white;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 nav
@@ -55,17 +56,17 @@ nav
     background-color: antiquewhite;
 }
 
+.active {
+    background: #8D8DAA !important;
+}
 
-
-
-
-footer 
+footer
 {
     width: 100%;
     text-align: center;
 }
 
-.container 
+.container
 {
     display: flex;
     flex-direction: column;
@@ -112,14 +113,14 @@ footer
     box-sizing: border-box;
 }
 
-.body 
+.body
 {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.tags 
+.tags
 {
     display: flex;
     flex-direction: row;
@@ -127,7 +128,7 @@ footer
     margin-top: 0.5em;
 }
 
-.tagss 
+.tagss
 {
     padding: 7px;
     border-radius: 10px;
@@ -151,8 +152,8 @@ footer
     line-height: 1.4em;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    display: -webkit-box;  
-} 
+    display: -webkit-box;
+}
 
 
 .home-container
@@ -227,6 +228,16 @@ footer
     }
 }
 
+.show-sm {
+    width: 20px;
+    height: 20px;
+}
+
+.rss-icon {
+    width: 30px;
+    height: 30px;
+}
+
 
 
 @media only screen and (max-width:490px) {
@@ -249,7 +260,7 @@ footer
 }
 
 @media only screen and (min-width:490px) {
-    
+
     .hide-sm
     {
         display: block;
@@ -262,7 +273,7 @@ footer
 
 
 
-nav h1 
+nav h1
 {
     font-size: 3em;
 }
@@ -286,7 +297,7 @@ nav h1
     margin-bottom: 2em;
 }
 
-.date 
+.date
 {
     font-size: 0.9em;
 }
@@ -297,6 +308,7 @@ nav h1
     max-width:100%;
     height:auto;
     margin-top: 10px;
+    width: 100%;
 }
 
 
@@ -331,7 +343,7 @@ figcaption
 }
 
 
-.footer 
+.footer
 {
     display: flex;
     flex-direction: column;
@@ -339,7 +351,7 @@ figcaption
     align-items: center;
 }
 
-.footer p 
+.footer p
 {
     width: fit-content;
     background-color: black;
@@ -355,7 +367,7 @@ figcaption
 
 
 /** Line */
-hr{ 
+hr{
     margin-top: 1.5em;
     width: 50%;
 }
@@ -364,4 +376,25 @@ hr{
 .ahrefmd
 {
     color: #ff6d91;
+}
+
+
+h1,h2,h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 17px;
+}
+
+@media screen and (max-width:360px) {
+    h1 {
+        text-align: center;
+    }
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+	font-family: Roboto Mono, monospace;
 }
