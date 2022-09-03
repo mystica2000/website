@@ -10,6 +10,9 @@ const url = new URL(window.location)
 
 document.querySelector("meta[property='og:url']").setAttribute('content',window.location.href)
 
+if(document.getElementById("share-btn")) {
+    document.getElementById("share-btn").setAttribute('data-url',window.location.href)
+}
 
 const id = ["blog","others","home"]
 
