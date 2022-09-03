@@ -7,22 +7,35 @@
     <title>Mystica</title>
     <link rel="stylesheet" href="/css/navbar.css">
     <link href="https://unpkg.com/prism-themes@1.6.0/themes/prism-gruvbox-dark.css" rel="stylesheet">
+    <meta property="og:type" content="website">
 
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@CuriouZmystee" />
+     <meta name="twitter:creator" content="@CuriouZmystee" />
+
+    <meta property="og:title" content="{{title}}" />
+    <meta name="twitter:title" content="{{title}}" />
+    <meta name="image" property="og:image" content="src/assets/images/banner.png" />
+    <meta property="twitter:image" content="src/assets/images/banner.png" />
+    <meta name="description" content="{{desp}}">
+    <meta property="og:description" content="{{desp}}" />
+    <meta name="twitter:description" content="{{desp}}" />
+
+    <meta property="og:url" content="https://mystica.pages.dev/" />
 </head>
 <body>
     {% include "partials/header.njk" %}
     <main tabindex="-1">
         {% block main %}
-        <div class="home-container" id="home">
+        <div class="home-container">
             <div class="home-content">
                 <div class="home-content-div">
                     <!-- <img src="/assets/images/mystic.jpg" alt="mystica" class="me"> -->
                     {% image "src/assets/images/mystic.jpg", "mystica","me" %}
                     <p class="home-content-p">
-                        <span>I am Mystica. I am Software Engineer. </span>
+                        <span>Hello there, I'm Mystica.</span>
                         <span style="display: block;">
-                        This is my personal website
-                        where i blog about different things.
+                        Software Developer.
                        </span>
                     </p>
                 </div>

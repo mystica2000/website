@@ -388,9 +388,16 @@ p {
     margin: 17px;
 }
 
-@media screen and (max-width:360px) {
+@media only screen and (max-width:360px) {
     h1 {
         text-align: center;
+    }
+}
+
+
+@media only screen and (max-height:500px) {
+    .home-content, .projects-list {
+        height: fit-content;
     }
 }
 
