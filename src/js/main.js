@@ -8,7 +8,10 @@ mediumZoom('.post-img',{
 const url = new URL(window.location)
 
 
-var id = ["blog","others","home"]
+document.querySelector("meta[property='og:url']").setAttribute('content',window.location.href)
+
+
+const id = ["blog","others","home"]
 
 function firstWord(str) {
     str = String(str)

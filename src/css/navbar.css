@@ -394,6 +394,13 @@ p {
     }
 }
 
+
+@media screen and (min-width:500px) {
+    .home-content, .projects-list {
+        height: auto;
+    }
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
 	font-family: Roboto Mono, monospace;
