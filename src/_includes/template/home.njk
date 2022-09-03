@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {# <title>Mystica</title> #}
+    <title>Mystica</title>
     <link rel="stylesheet" href="/css/navbar.css">
     <link href="https://unpkg.com/prism-themes@1.6.0/themes/prism-gruvbox-dark.css" rel="stylesheet">
     <meta property="og:type" content="website">
@@ -24,22 +24,12 @@
     {# <meta property="twitter:image" content="link-to-image" /> #}
     <meta property="og:url" content="https://mystica.pages.dev/" />
     {# <meta name="image" property="og:image" content="link-to-image" /> #}
-
-
-    <title>
-        {% if title %}
-             {{ title }}
-        {% else %}
-             no world
-        {% endif %}
-    </title>
-
 </head>
 <body>
     {% include "partials/header.njk" %}
     <main tabindex="-1">
         {% block main %}
-        <div class="home-container" id="home">
+        <div class="home-container">
             <div class="home-content">
                 <div class="home-content-div">
                     <!-- <img src="/assets/images/mystic.jpg" alt="mystica" class="me"> -->
