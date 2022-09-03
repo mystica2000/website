@@ -395,9 +395,9 @@ p {
 }
 
 
-@media only screen and (min-width:500px) {
+@media only screen and (max-height:500px) {
     .home-content, .projects-list {
-        height: auto;
+        height: fit-content;
     }
 }
 
