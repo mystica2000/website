@@ -3,6 +3,7 @@
 {% block main %}
 <div class="container">
     <h1>Blogs</h1>
+    <section>
     <ul>
     {% for post in collections.post %}
             <li class="blog">
@@ -26,5 +27,6 @@
             </li>
 {% endfor %}
     </ul>
+    </section>
 </div>
 {% endblock %}
