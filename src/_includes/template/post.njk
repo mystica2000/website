@@ -1,6 +1,8 @@
 {% extends "template/home.njk" %}
 
 {% block main %}
+<link href="https://unpkg.com/prism-themes@1.6.0/themes/prism-gruvbox-dark.css" rel="stylesheet">
+    
 <div class="container">
     <div class="post-container">
         <div class="post-header">
@@ -19,11 +21,27 @@
          <a class="twitter-share-button"
               href="https://twitter.com/intent/tweet"
               data-via="CuriouzMystee"
-              data-url="https://mystica.pages.dev/blog/"
+              data-url="https://mystica.me/blog/"
               data-text="{{title}}-{{desp}}"
               id="share-btn"
-              data-size="large">Tweet this article</a>
+              data-size="large">Share</a>
         </div>
     </div>
+    <script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+
+  return t;
+}(document, "script", "twitter-wjs"));</script>
 </div>
 {% endblock %}

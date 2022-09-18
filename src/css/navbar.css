@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400&family=Poppins:wght@300&display=swap');
 
 * {
     margin: 0;
@@ -71,7 +70,10 @@ footer
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
+    min-height: 73vh;
+    width: 98%;
+    margin: auto;
+    justify-content: flex-start;
 }
 
 .blog h2
@@ -79,6 +81,8 @@ footer
     text-decoration: underline;
     text-underline-offset: 2px;
     color: white;
+    margin-top: 3px;
+    margin-bottom: 0px;
 }
 
 
@@ -102,12 +106,11 @@ footer
 .blog
 {
     max-width: 720px;
-    width: 720px;
+    width: 100%;
     margin: 10px;
     justify-content: center;
-    border: 2px solid #9ca3af;
-    border-radius: 10px;
-    padding: 2em;
+    border-bottom: 2px solid #9ca3af;
+    padding: 1em;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -138,8 +141,7 @@ footer
 
 .content
 {
-    margin-bottom: 10px;
-    height: 100px;
+    max-height: 100px;
 }
 
 .content p
@@ -162,6 +164,8 @@ footer
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin:auto;
 }
 
 .home-content,.projects-list
@@ -171,7 +175,7 @@ footer
     justify-content: center;
     align-items: center;
     gap: 20px;
-    height: 100vh;
+    height: 73vh;
 }
 
 .home-content-div
@@ -395,7 +399,7 @@ p {
 }
 
 
-@media only screen and (max-height:500px) {
+@media only screen and (max-height:720px) {
     .home-content, .projects-list {
         height: fit-content;
     }
