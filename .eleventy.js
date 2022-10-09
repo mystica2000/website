@@ -34,6 +34,7 @@ module.exports = (eleventyConfig) =>
     eleventyConfig.addPassthroughCopy('src/css')
     eleventyConfig.addPassthroughCopy('src/js')
     eleventyConfig.addPassthroughCopy('src/assets')
+    eleventyConfig.addPassthroughCopy( '/robots.txt');
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
