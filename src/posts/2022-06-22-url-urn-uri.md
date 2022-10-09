@@ -149,7 +149,7 @@ code:
 
 <figure>
 <figcaption>
-{% image "src/assets/images/posts/urlurnuri/sample.jpg", "On running above html code, the browser console displaying URN as Failed to launch 'urn:mrn:iala:pub:g1143' because the scheme does not have a registered handle,for mail and ftp, it displays Launched external handler","post-img" %}
+{% image "src/assets/images/posts/urlurnuri/sample.jpg", "","post-img" %}
 On running above html code, the browser console displaying URN as Failed to launch 'urn:mrn:iala:pub:g1143' because the scheme does not have a registered handle,for mail and ftp, it displays Launched external handler
 </figcaption>
 </figure>
