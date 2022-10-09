@@ -1,83 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
-    <title>Mystica</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="/css/navbar.css"  rel="preload" as="style"  onload="this.rel='stylesheet'">
-
-
-
-    <meta property="og:type" content="website">
-
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@CuriouZmystee" />
-     <meta name="twitter:creator" content="@CuriouZmystee" />
-
-    <meta property="og:title" content="{{title}}" />
-    <meta name="twitter:title" content="{{title}}" />
-    <meta name="image" property="og:image" content="https://raw.githubusercontent.com/mystica2000/website/main/src/assets/images/banner.png" />
-    <meta name="twitter:image" content="https://raw.githubusercontent.com/mystica2000/website/main/src/assets/images/banner.png" />
-    <meta name="description" content="{{desp}}">
-    <meta property="og:description" content="{{desp}}" />
-    <meta name="twitter:description" content="{{desp}}" />
-    <meta name="keywords" content="{{keywords}}" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
-
-
-    <meta property="og:url" content="https://mystica.me/" />
-</head>
-<body>
-    {% include "partials/header.njk" %}
-    <main tabindex="-1">
-        {% block main %}
-        <div class="home-container">
-            <div class="home-content">
-                <div class="home-content-div">
-                    <img src="assets/images/mystic.jpg" alt="mystica" class="me" />
-                    <p class="home-content-p">
-                        <span>Hello there, I'm Mystica.</span>
-                        <span style="display: block;">
-                        Software Developer. Curious Dojo. <br>
-                       </span>
-                    </p>
-                </div>
-                <div class="home-content-div">
-                    <div class="box">
-                            <a href="https://github.com/mystica2000" target="_blank">
-                                {% image "src/assets/images/github.png", "github profile","logo" %}
-                            </a>
-                            <a href="https://twitter.com/CuriouZmystee" target="_blank">
-                                {% image "src/assets/images/twitter.png", "twitter profile","logo" %}
-                            </a>
-                            <a href="https://www.linkedin.com/in/infant-mystica-810776195/" target="_blank">
-                                {% image "src/assets/images/linkedin1.png", "Linkedin profile","logo" %}
-                            </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+        <title>Mystica</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="/css/navbar.css" rel="preload" as="style" onload="this.rel='stylesheet'">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@CuriouZmystee"/>
+        <meta name="twitter:creator" content="@CuriouZmystee"/>
+        <meta property="og:title" content="{{ title }}"/>
+        <meta name="twitter:title" content="{{ title }}"/>
+        <meta
+            name="image"
+            property="og:image"
+            content="https://raw.githubusercontent.com/mystica2000/website/main/src/assets/images/banner.png"/>
+        <meta
+            name="twitter:image"
+            content="https://raw.githubusercontent.com/mystica2000/website/main/src/assets/images/banner.png"/>
+        <meta name="description" content="{{ desp }}">
+        <meta property="og:description" content="{{ desp }}"/>
+        <meta name="twitter:description" content="{{ desp }}"/>
+        <meta name="keywords" content="{{ keywords }}"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            media="print"
+            onload="this.media='all'"/>
+        <noscript>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" type="text/css"/>
+        </noscript>
+        <meta property="og:url" content="https://mystica.me/"/>
+    </head>
+    <body>
+        {% include "partials/header.njk" %}
+        <main tabindex="-1">
+            {% block main %}
+                <div class="home-container">
+                    <div class="home-content">
+                        <div class="home-content-div">
+                            <img src="assets/images/mystic.jpg" alt="mystica" class="me"/>
+                            <p class="home-content-p">
+                                <span>Hello there, I'm Mystica.</span>
+                                <span style="display: block;">
+                                    Software Developer. Curious Dojo. <br>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="home-content-div">
+                            <div class="box">
+                                <a href="https://github.com/mystica2000" target="_blank">
+                                    {% image "src/assets/images/github.png", "github profile","logo" %}
+                                </a>
+                                <a href="https://twitter.com/CuriouZmystee" target="_blank">
+                                    {% image "src/assets/images/twitter.png", "twitter profile","logo" %}
+                                </a>
+                                <a href="https://www.linkedin.com/in/infant-mystica-810776195/" target="_blank">
+                                    {% image "src/assets/images/linkedin1.png", "Linkedin profile","logo" %}
+                                </a>
+                            </div>
+                        </div>
                     </div>
+                    {# <div class="projects" id="projects">
+                                <div class="">
+                                    <h1>Projects</h1>
+                                </div>
+                            </div> #}
                 </div>
-            </div>
-
-        {# <div class="projects" id="projects">
-            <div class="">
-                <h1>Projects</h1>
-            </div>
-        </div> #}
-        </div>
-        {% endblock %}
-    </main>
-    {% include "partials/footer.njk" %}
-
-<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.js"></script>
-<script src="/js/main.js"></script>
-</body>
-
+            {% endblock %}
+        </main>
+        {% include "partials/footer.njk" %}
+        <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
 </html>
