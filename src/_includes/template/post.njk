@@ -1,11 +1,12 @@
 {% extends "template/home.njk" %}
 
 {% block main %}
-<link href="https://unpkg.com/prism-themes@1.6.0/themes/prism-gruvbox-dark.css" rel="stylesheet">
-    
+<link href="/css/gruvbox.css" rel="stylesheet">
+
 <div class="container">
     <div class="post-container">
-        <div class="post-header">
+      <article>
+        {# <div class="post-header"> #}
              <h1>{{title}}</h1>
              <p class="date">Last Updated: {{page.date.toUTCString()}}</p>
                 <ul class="tags post-tags">
@@ -15,9 +16,9 @@
                   {% endif %}
                 {% endfor %}
               </ul>
-        </div>
-        <div>
-            {{content | safe }}
+        {# </div> #}
+
+            {{content | safe }}</article>
          <a class="twitter-share-button"
               href="https://twitter.com/intent/tweet"
               data-via="CuriouzMystee"
@@ -25,7 +26,6 @@
               data-text="{{title}}-{{desp}}"
               id="share-btn"
               data-size="large">Share</a>
-        </div>
     </div>
     <script>window.twttr = (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0],

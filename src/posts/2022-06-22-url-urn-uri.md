@@ -19,7 +19,7 @@ A resource can be HTML file, images, API endpoints, services, or any documents, 
 
 
 
-{% image "src/assets/images/posts/urlurnuri/venn-diagram.jpg", "venn diagram describing how URL and URN are subsets of URI","post-img" %}
+{% image "src/assets/images/posts/urlurnuri/venn-diagram.jpg", "venn diagram describing how URL and URN are subsets of URI","post-img", "lazy" %}
 
 <br>
 
@@ -50,7 +50,7 @@ Scheme_Specific_Path = path/to/retreival/of/resource
 ### Example of the URL
 
 
-{% image "src/assets/images/posts/urlurnuri/url.jpg", "http:/abc.com/index.html?name=hello#section2 where http:/ is protocol, abc.com is authority, /index.html is location or path, ?name=hello is query, #section2 is fragment","post-img" %}
+{% image "src/assets/images/posts/urlurnuri/url.jpg", "http:/abc.com/index.html?name=hello#section2 where http:/ is protocol, abc.com is authority, /index.html is location or path, ?name=hello is query, #section2 is fragment","post-img", "lazy" %}
 <br>
 <br>
 
@@ -74,7 +74,7 @@ where,
 
 ### Examples of URN:
 
-{% image "src/assets/images/posts/urlurnuri/urn.jpg", "URN:ISBN:9780545162074 where NID is ISBN and NSS is 9780545162074","post-img" %}
+{% image "src/assets/images/posts/urlurnuri/urn.jpg", "URN:ISBN:9780545162074 where NID is ISBN and NSS is 9780545162074","post-img", "lazy" %}
 <br>
 
 Here in the example, we can able to see ISBN is unique for the books and it just tells what is the ISBN id for the book rather than where to find them...
@@ -120,7 +120,7 @@ From the above syntax,  we can able to see the "Scheme" in the syntax matches wi
 <br>
 Combining both of the above examples from URL and URN,
 
-{% image "src/assets/images/posts/urlurnuri/combine.jpg", "from the above example, http and urn are scheme whereas heir-path is what's following the part of the url or urn in the above examples","post-img" %}
+{% image "src/assets/images/posts/urlurnuri/combine.jpg", "from the above example, http and urn are scheme whereas heir-path is what's following the part of the url or urn in the above examples","post-img", "lazy" %}
 
 <br>
 <br>
@@ -149,7 +149,7 @@ code:
 
 <figure>
 <figcaption>
-{% image "src/assets/images/posts/urlurnuri/sample.jpg", "On running above html code, the browser console displaying URN as Failed to launch 'urn:mrn:iala:pub:g1143' because the scheme does not have a registered handle,for mail and ftp, it displays Launched external handler","post-img" %}
+{% image "src/assets/images/posts/urlurnuri/sample.jpg", "On running above html code, the browser console displaying URN as Failed to launch 'urn:mrn:iala:pub:g1143' because the scheme does not have a registered handle,for mail and ftp, it displays Launched external handler","post-img", "lazy" %}
 On running above html code, the browser console displaying URN as Failed to launch 'urn:mrn:iala:pub:g1143' because the scheme does not have a registered handle,for mail and ftp, it displays Launched external handler
 </figcaption>
 </figure>
@@ -166,7 +166,7 @@ URN failed because the **web** browser can't able to resolve the URN to URL...
 
 <br>
 And we do Deep Linking (the link that sends the user directly to the app installed on their phone instead of using the web version of the app on the browser)... we use URI Scheme for the app to enable deep linking. It is one of the use cases for the URI Scheme.
-{% image "src/assets/images/posts/urlurnuri/deeplink.png", "diagram explaining the user clicks on the link that takes them to specific app and then deep linking checks whether the app is installed or not in user device, if yes then open the app and shows content. if not installed, it goes to play store or app store to install the app","post-img" %}
+{% image "src/assets/images/posts/urlurnuri/deeplink.png", "diagram explaining the user clicks on the link that takes them to specific app and then deep linking checks whether the app is installed or not in user device, if yes then open the app and shows content. if not installed, it goes to play store or app store to install the app","post-img", "lazy" %}
 
 
 <br>
