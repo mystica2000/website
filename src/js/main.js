@@ -11,4 +11,4 @@ let activeLink=[];for(let i=1;i<str.length;i++){if(str[i]=='/'){break}
 activeLink.push(str[i])}
 str=activeLink.join("")
 for(let i=0;i<id.length;i++){var doc=document.getElementById(id[i])
-if(id[i]===str){doc.classList.add("active")}else{if(doc.classList.contains("active")){doc.classList.remove("active")}}}}
+if(id[i]===str){doc.classList.add("active")}else{if(doc.classList.contains("active")){doc.classList.remove("active")}}}} firstWord(url.pathname)
