@@ -2,7 +2,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
 
-async function imageShortcode(src, alt,className) {
+async function imageShortcode(src, alt,className,load) {
 
     sizes = "(min-width: 50em) 50vw, 100vw"
 
@@ -17,13 +17,12 @@ async function imageShortcode(src, alt,className) {
         class: className,
         alt,
         sizes,
-        loading: "lazy",
+        loading: load,
         decoding: "async",
       };
 
-      console.log(sizes)
 
-    // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+
     return Image.generateHTML(metadata, imageAttributes);
 }
 
