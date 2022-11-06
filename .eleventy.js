@@ -1,6 +1,7 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const Image = require("@11ty/eleventy-img");
+const CleanCSS = require("clean-css");
 
 async function imageShortcode(src, alt,className,load) {
 
@@ -39,6 +40,9 @@ module.exports = (eleventyConfig) =>
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
     eleventyConfig.addLiquidShortcode("image", imageShortcode);
     eleventyConfig.addJavaScriptFunction("image", imageShortcode);
+    eleventyConfig.addFilter("cssmin", function(code) {
+      return new CleanCSS({}).minify(code).styles;
+    });
 
 
     eleventyConfig.addShortcode("ahref",function(aahref,text,className) {
