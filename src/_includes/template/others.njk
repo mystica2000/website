@@ -1,9 +1,23 @@
 {% extends "template/home.njk" %}
-
 {% block main %}
-<div class="container">
-    <h1>Others</h1>
-    <p style="text-align:center;">The list of random stuff that i like</p>
-    <hr>
-</div>
+  <div class="container">
+    <section class="post-container" style="margin-top:1em">
+      <h2>A bit about me</h2>
+      <p>I'm Mystica (Yes, that's my real name). I graduated with a bachelor's in Information Technology in 2021. And now, I have
+      been working as a software developer(remotely) at a startup based in Florida for over a year now. </p>
+
+      <p>I speak Tamil and English!</p>
+
+      <div style="margin-left:30px">
+        <ul>Interests on tech:</ul>
+          <li>Full Stack Web</li>
+          <li>Compilers</li>
+          <li>Machine Learning</li>
+          <li>Computer Networks </li>
+      </div>
+      <br>
+
+      {{ content | safe }}
+    </section>
+  </div>
 {% endblock %}

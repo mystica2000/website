@@ -90,7 +90,7 @@ footer {
 
 .blog {
   max-width: 720px;
-  width: 100%;
+
   margin: 10px;
   justify-content: center;
   border-bottom: 2px solid #9ca3af;
@@ -345,4 +345,11 @@ p {
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: Roboto Mono, monospace;
+}
+
+.talk {
+  padding: 30px;
+  margin: 3px;
+  margin-top: 10px;
+  border: 1px solid white;
 }
