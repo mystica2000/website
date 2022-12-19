@@ -43,6 +43,7 @@ If you look at the ethernet frames in Wireshark, you can see IPv4/ IPv6 as paylo
 {% image "src/assets/images/posts/http-packets/ethernet.png", "ethernet frame containing IPv6 as payload in wireshark","post-img", "lazy" %}
 
 
+
 ### 🚀 Network Layer
 In this case, it’s IPv6. And then followed by IPv6 Packet now, containing TCP as its payload.
 
