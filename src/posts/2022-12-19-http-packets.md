@@ -23,7 +23,7 @@ Let’s analyze using {% ahref "https://www.wireshark.org/","Wireshark","ahrefmd
 
 ## ✨ Abstracted View of OSI Model
 
-{% image "src/assets/images/posts/http-packets/osi.png", "osi layer architecture containing application layer having protocols http, dns, ftp and transport layer protocol containing udp, tcp and quic","post-img", "lazy" %}
+{% image "src/assets/images/posts/httppackets/osi.png", "osi layer architecture containing application layer having protocols http, dns, ftp and transport layer protocol containing udp, tcp and quic","post-img", "lazy" %}
 
 
 HTTP, DNS, and FTP are all application layer protocols that we use when developing apps in general. But to send this request to a server it needs to be traveled via various networks. Packets make it possible to send chunks of data across several networks.
@@ -40,31 +40,31 @@ transport layer. And Well, TCP is the payload for IP Packets. And then IP is the
 ### 🚀 Start from the Bottom (Ethernet Layer)
 If you look at the ethernet frames in Wireshark, you can see IPv4/ IPv6 as payload for the ethernet frame.
 
-{% image "src/assets/images/posts/http-packets/ethernet.png", "ethernet frame containing IPv6 as payload in wireshark","post-img", "lazy" %}
+{% image "src/assets/images/posts/httppackets/ethernet.png", "ethernet frame containing IPv6 as payload in wireshark","post-img", "lazy" %}
 
 
 ### 🚀 Network Layer
 In this case, it’s IPv6. And then followed by IPv6 Packet now, containing TCP as its payload.
 
-{% image "src/assets/images/posts/http-packets/ipv6.png", "IPv6 packet containing TCP as payload in wireshark","post-img", "lazy" %}
+{% image "src/assets/images/posts/httppackets/ipv6.png", "IPv6 packet containing TCP as payload in wireshark","post-img", "lazy" %}
 
 
 ### 🚀 Transport Layer
 Now, look at the TCP Packet, it contains destination PORT as 80 which belongs to HTTP.  we are gonna request a resource from a server that is running http server at port 80. And another port to keep in mind that our source port is 57995 (random port) selected by our browser or application. so the payload of 303 bytes here is for HTTP Request.
 
-{% image "src/assets/images/posts/http-packets/tcppacket.png", "tcp packet containing destination port as 80 (http port), desination port as 57995 (random port) and tcp payload byte as 303 which is request data of http","post-img", "lazy" %}
+{% image "src/assets/images/posts/httppackets/tcppacket.png", "tcp packet containing destination port as 80 (http port), desination port as 57995 (random port) and tcp payload byte as 303 which is request data of http","post-img", "lazy" %}
 
 
 ### 🚀 Application Layer
 Now, the HTTP load contains the request we made... For example get request for /canonical.html which uses http version 1.1
 
-{% image "src/assets/images/posts/http-packets/tcppayload.jpg", "http request data containing requesting GET for /canoinical.html here","post-img", "lazy" %}
+{% image "src/assets/images/posts/httppackets/tcppayload.jpg", "http request data containing requesting GET for /canoinical.html here","post-img", "lazy" %}
 
 This is how the packet travels across the network! To wrap things up, packets are encapsulated at every level of the TCP/IP Stack and then sent across the network.
 
 
 ## Our Data Packets!!!
-{% image "src/assets/images/posts/http-packets/payload.png", "diagram containing http encapsulated in http, tcp encapsulated in ip and then ip encapsulated in ethernet frames","post-img", "lazy" %}
+{% image "src/assets/images/posts/httppackets/payload.png", "diagram containing http encapsulated in http, tcp encapsulated in ip and then ip encapsulated in ethernet frames","post-img", "lazy" %}
 
 
 
@@ -74,7 +74,7 @@ Similarly, For HTTP Response from the Server. It looks kinda similar but the sou
 Since we made the request from port 57995 (random port). We are receiving the response from the PORT 80 and sending it to our application which is running at 57995 port.
 
 
-{% image "src/assets/images/posts/http-packets/responsetcp.jpg", "tcp packet containing source port as 80 (http port), desination port as 57995 (random port)","post-img", "lazy" %}
+{% image "src/assets/images/posts/httppackets/responsetcp.jpg", "tcp packet containing source port as 80 (http port), desination port as 57995 (random port)","post-img", "lazy" %}
 
 This is the overview of the HTTP packets and how packet is created to communicate across the networks.
 
