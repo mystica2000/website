@@ -71,7 +71,6 @@ This is how the packet travels across the network! To wrap things up, packets ar
 ## 🔙 HTTP Response Packet
 Similarly, For HTTP Response from the Server. It looks kinda similar but the source and destination ports and IP gets changed in Transport (TCP Packet) and Network (IPV6).
 
-
 Since we made the request from port 57995 (random port). We are receiving the response from the PORT 80 and sending it to our application which is running at 57995 port.
 
 
