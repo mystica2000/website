@@ -2,10 +2,11 @@
 
 {% block main %}
 <div class="container">
-    <h1>Blogs</h1>
+    <h1>Writings</h1>
     <section>
     <ul>
-    {% for post in collections.post %}
+    {% for post in collections.post | reverse %}
+
             <li class="blog">
                <div class="tags">
                    {% for tag in post.data.tags %}
@@ -18,10 +19,11 @@
                    <div class="heading">
                        <a href="{{post.url}}" class="blog-title"><h2> {{post.data.title}}</h2></a>
                    </div>
+                   <span style="font-size:14px"> 🕔 {{post.date.toDateString()}}</span>
                    <div class="content">
                     <p>
                     {{post.data.desp}}
-                    </p>   
+                    </p>
                   </div>
                </div>
             </li>

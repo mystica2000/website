@@ -6,9 +6,10 @@ tags:
   - networks
   - http
 keywords: "web,networks,http,packets,tcp,ip"
+date: Last Modified
 ---
 
-### Motivation
+## 💡 Motivation
 The level of abstraction in software development nowadays is mind-blowing.
 Abstraction makes it easier for us to solve problems instead of knowing the internals of some tech we don't care about but on the other hand,
 it looks like a black box sometimes. What happens when I make an HTTP request and how the database knows where to store?
@@ -64,7 +65,7 @@ Now, the HTTP load contains the request we made... For example get request for /
 This is how the packet travels across the network! To wrap things up, packets are encapsulated at every level of the TCP/IP Stack and then sent across the network.
 
 
-## Our Data Packets!!!
+## ✨ Our Data Packets!!!
 {% image "src/assets/images/posts/httppackets/payload.png", "diagram containing http encapsulated in http, tcp encapsulated in ip and then ip encapsulated in ethernet frames","post-img", "lazy" %}
 
 

@@ -124,17 +124,7 @@ footer {
   max-height: 100px;
 }
 
-.content p {
-  max-height: 100px;
-  overflow: hidden;
-  padding: 10px;
-  background-color: rgb(208 227 249);
-  -webkit-line-clamp: 4;
-  line-height: 1.4em;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  display: -webkit-box;
-}
+
 
 .home-container {
   display: flex;
@@ -345,6 +335,19 @@ p {
 code[class*="language-"],
 pre[class*="language-"] {
   font-family: Roboto Mono, monospace;
+}
+
+.content p {
+  max-height: 100px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: rgb(208 227 249);
+  -webkit-line-clamp: 4;
+  line-height: 1.4em;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+  margin: 0;
 }
 
 .talk {

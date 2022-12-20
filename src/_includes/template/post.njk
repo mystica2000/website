@@ -6,7 +6,7 @@
       <article>
         {# <div class="post-header"> #}
              <h1>{{title}}</h1>
-             <p class="date">Last Updated: {{page.date.toUTCString()}}</p>
+             <p class="date">🕔 {{page.date.toDateString()}}</p>
                 <ul class="tags post-tags">
                 {% for tag in tags %}
                   {% if tag !== 'post' %}
