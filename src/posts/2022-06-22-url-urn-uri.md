@@ -4,7 +4,7 @@ desp: "Major Difference between URL, URN, URI"
 tags:
   - web
 keywords: "web,url,uri,urn,networks"
-date: Last Modified
+date: '2022-06-22'
 ---
 
 Before going into the understanding of these three acronyms, we will learn what is the resource in the acronym of the <abbr title="Uniform Resource Locator">URL</abbr>,<abbr title="Uniform Resource Namespace">  URN</abbr>, <abbr title="Uniform Resource Identifier">URI</abbr> .
