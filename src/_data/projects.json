@@ -1,5 +1,17 @@
 [
   {
+    "emoji": "🚀",
+    "name": "This Site",
+    "url": "https://github.com/mystica2000/website",
+    "description": [
+      "Personal site created using Eleventy (11ty)",
+      "nunjucks as templating engine, data cascading in 11ty",
+      "supports twitter cards",
+      "others: Deployed on cloudflare pages"
+    ],
+    "live": "https://mystica.me/"
+  },
+  {
     "emoji": "📰",
     "name": "Feed Roll",
     "url": "https://github.com/mystica2000/feed-roll",
