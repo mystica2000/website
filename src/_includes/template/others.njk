@@ -3,17 +3,36 @@
   <div class="container">
     <section class="post-container" style="margin-top:1em">
       <h2>A bit about me</h2>
-      <p>I'm Mystica (Yes, that's my real name). Graduated with Bachelor's in Information Technology in 2021.
-        I am a fullstack developer working remotely from a small town 🏠. I have a sweet dog named Dolly 🐶 who would trade me for coconut 🥥  </p>
+      <p>I'm Mystica (Yes, that's my real name). Graduated with Bachelor's in Information Technology in 2021. I am a fullstack
+        developer working remotely from a small town 🏠. I have a sweet dog named Dolly 🐶 who would trade me for coconut 🥥. I
+        speak தமிழ் (Tamil) / English and currently learning español.
+      </p>
       <br>
-
-      <ul>Currently Exploring about,
-        <li>- JS Ecosystem </li>
-        <li>- Computer Networks </li>
-        <li>-  CRDTs, Distributed Systems.</li>
-      </ul>
-
-      {{ content | safe }}
-    </section>
-  </div>
-{% endblock %}
+        <p style="margin:0em;">Currently Exploring about,</p>
+        <ul style=" list-style-type: circle;padding-left: 2em;padding-top:0.3em;">
+          <li>JS Ecosystem
+          </li>
+          <li>Computer Networks
+          </li>
+          <li>WebRTC
+          </li>
+          <li>CRDTs, Distributed Systems</li>
+        </ul>
+        <br>
+          <h2>Tools i primarily work with:</h2>
+          <div>
+            {% for item in tools %}
+              {% for key, value in item %}
+                <span>
+                  <h3>{{ key }}</h3>
+                  {% for val in value %}
+                    <a class="stack" href="{{ val.url }}" target="_blank">{{ val.name }}</a>
+                  {% endfor %}
+                </span>
+              {% endfor %}
+            {% endfor %}
+          </div>
+          {{ content | safe }}
+        </section>
+      </div>
+    {% endblock %}

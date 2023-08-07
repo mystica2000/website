@@ -5,9 +5,6 @@ layout: template/others.njk
 desp: "about page"
 ---
 
-
-
-
 ## Talks
 
 <div class="talk">

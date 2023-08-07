@@ -1,0 +1,36 @@
+{% extends "template/home.njk" %}
+{% block main %}
+  <div class="container">
+    <main class="post-container" style="margin-top:1em">
+      My Personal Projects
+      <p>
+        Projects that i have created while learning and experimenting with a new tech :)
+      </p>
+      <table>
+        {% for project in projects %}
+          <tr class="projects">
+            <td>{{ project.emoji }}
+              <a class="ahrefmd" target="_blank" href="{{ project.url }}" >
+                {{ project.name }}
+              </a>
+              <br>
+            </td>
+            <td>
+              <ul style="padding:0.5em;">
+                {% for desp in project.description %}
+                  <li>{{ desp }}</li>
+                {% endfor %}
+              </ul>
+              {% if project.live.length %}
+               <a class="ahrefmd" target="_blank" href="{{ project.live }}">
+                live
+              </a>
+              {% endif %}
+            </td>
+          </tr>
+        {% endfor %}
+      </table>
+      <p style="text-align:center;">And Checkout more on my <a class="ahrefmd" target="_blank" href="https://github.com/mystica2000" >github</a></p>
+    </main>
+  </div>
+{% endblock %}

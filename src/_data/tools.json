@@ -1,0 +1,66 @@
+[
+  {
+    "Frontend": [
+      {
+        "name": "Angular",
+        "url": "https://angular.io/"
+      },
+      {
+        "name": "React",
+        "url": "https://react.dev/"
+      },
+      {
+        "name": "SolidJS",
+        "url": "https://www.solidjs.com/"
+      },
+      {
+        "name": "Ionic",
+        "url": "https://ionicframework.com/"
+      }
+    ]
+  },
+  {
+    "Backend": [
+      {
+        "name": "Node",
+        "url": "https://nodejs.org/en"
+      },
+      {
+        "name": "Golang",
+        "url": "https://go.dev/"
+      }
+    ]
+  },
+  {
+    "Scripting": [
+      {
+        "name": "Python",
+        "url": "https://www.python.org/"
+      }
+    ]
+  },
+  {
+    "DB": [
+      {
+        "name": "MySql",
+        "url": "https://www.mysql.com/"
+      },
+      {
+        "name": "SQLite",
+        "url": "https://www.sqlite.org/index.html"
+      }
+    ]
+  },
+  {
+    "others": [
+      {
+        "name": "Redis",
+        "url": "https://redis.io/"
+      },
+      {
+        "name": "RxJS",
+        "url": "https://rxjs.dev/"
+      }
+    ]
+  }
+]

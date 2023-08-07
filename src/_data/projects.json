@@ -1,0 +1,55 @@
+[
+  {
+    "emoji": "📰",
+    "name": "Feed Roll",
+    "url": "https://github.com/mystica2000/feed-roll",
+    "description": [
+      "RSS Feeds from various engineering blogs at once place",
+      "Cron Job that fetches the feed every day",
+      "Tech Stack: SolidJS, Go"
+    ],
+    "live": "https://feed-roll.vercel.app/"
+  },
+  {
+    "emoji": "👀",
+    "name": "Anon Me!",
+    "url": "https://github.com/mystica2000/anon-me",
+    "description": [
+      "platform that allows people to send anonymous texts (similar to ngl.lnk)",
+      "generated link can able share to socials and user can able to view anonymous texts which are sent to them",
+      "enable/disable link, customize url/profile,download the response as image And more!",
+      "Tech Stack: SolidJS, Go, SQLite",
+      "Uses zap for logging, OAuth, Cloudinary SDK for storing images, Viper for env variables"
+    ]
+  },
+  {
+    "emoji": "🧩",
+    "name": "md Parser",
+    "url": "https://github.com/mystica2000/md-parser",
+    "description": [
+      "extending markdown by creating custom tags/rules for ease of usage",
+      "can able to add new custom rules",
+      "TechStack: Go - regex"
+    ]
+  },
+  {
+    "emoji": "🖼️",
+    "name": "Canvas Whiteboard",
+    "url": "https://github.com/mystica2000/canvas-whiteboard",
+    "description": [
+      "real-time collaborative whiteboard using websocket + HTML Canvas",
+      "Supports concurrency, closes connection if user is idle",
+      "Tech Stack: SolidJS, Go"
+    ]
+  },
+  {
+    "emoji": "🌐",
+    "name": "DNS Client",
+    "url": "https://github.com/mystica2000/dnsclient",
+    "description": [
+      "Simple DNS Client created using Go (similar to dig command in linux)",
+      "creates DNS raw packet and include in UDP payload, requests to public dns server and gets domain info",
+      "using standard go packages"
+    ]
+  }
+]
